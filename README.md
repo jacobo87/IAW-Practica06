@@ -17,8 +17,10 @@ En esta práctica vamos a instalar la pila LEMP que es una variación de la pila
 Nginx está considerado como un servidor web ligero de alto rendimiento que además suele ser utilizado como proxy inverso y balanceador de carga.
 ### Instalación del servidor web Nginx
 
-``sudo apt-get update``
-``sudo apt-get install nginx``
+```bash
+sudo apt-get update
+sudo apt-get install nginx
+```
 
 ### Instalación de php-fpm y php-mysql
 
