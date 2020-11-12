@@ -1,7 +1,7 @@
-# IAW - Práctica 5
->IES Celia Viñas (Almería) - Curso 2020/2021 
->Módulo: IAW - Implantación de Aplicaciones Web 
->Ciclo: CFGS Administración de Sistemas Informáticos en Red 
+# IAW - Práctica 5 
+>IES Celia Viñas (Almería) - Curso 2020/2021  
+>Módulo: IAW - Implantación de Aplicaciones Web  
+>Ciclo: CFGS Administración de Sistemas Informáticos en Red  
 
 1. LEMP Stack
    1.1 Instalación del servidor web Nginx
