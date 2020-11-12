@@ -118,3 +118,4 @@ Una vez realizados los cambios reiniciamos el servicio nginx:
 ## 2 Referencias
 
 - https://josejuansanchez.org/iaw/practica-06-teoria/index.html
+- https://josejuansanchez.org/iaw/practica-06/index.html
