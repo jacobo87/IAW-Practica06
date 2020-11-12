@@ -4,10 +4,10 @@
 >Ciclo: CFGS Administración de Sistemas Informáticos en Red  
 
 1. LEMP Stack 
-   1.1 Instalación del servidor web Nginx 
-   1.2 Instalación de php-fpm y php-mysql 
-   1.3 Configuración de php-fpm 
-   1.4 Configurar Nginx para usar php-fpm 
+- Instalación del servidor web Nginx 
+- Instalación de php-fpm y php-mysql 
+- Configuración de php-fpm 
+- Configurar Nginx para usar php-fpm 
 2. Referencias 
 
 ## 1 LEMP Stack
@@ -15,12 +15,12 @@
 En esta práctica vamos a instalar la pila LEMP que es una variación de la pila LAMP. La única diferencia es que usa el servidor Nginx en lugar de Apache.
 
 Nginx está considerado como un servidor web ligero de alto rendimiento que además suele ser utilizado como proxy inverso y balanceador de carga.
-### 1.1 Instalación del servidor web Nginx
+### Instalación del servidor web Nginx
 
 sudo apt-get update
 sudo apt-get install nginx
 
-### 1.2 Instalación de php-fpm y php-mysql
+### Instalación de php-fpm y php-mysql
 
 El paquete php-fpm (PHP FastCGI Process Manager) es una implementación alternativa al PHP FastCGI con algunas características adicionales útiles para sitios web com mucho tráfico.
 
@@ -28,7 +28,7 @@ El paquete php-mysql permite a PHP interaccionar con el sistema gestor de bases 
 
 sudo apt-get install php-fpm php-mysql
 
-### 1.3 Configuración de php-fpm
+### Configuración de php-fpm
 
 Es recomendable realizar un cambio en la directiva de configuración cgi.fix_pathinfo por cuestiones de seguridad. Editamos el siguiente archivo de configuración:
 
@@ -56,7 +56,7 @@ Una vez modificado el archivo de configuración y guardados los cambios reinicia
 sudo systemctl restart php7.2-fpm
 ```
 
-### 1.4 Configurar Nginx para usar php-fpm
+### Configurar Nginx para usar php-fpm
 
 Editamos el archivo de configuración```bash
 /etc/nginx/sites-available/default``` :
