@@ -3,12 +3,12 @@
 >Módulo: IAW - Implantación de Aplicaciones Web  
 >Ciclo: CFGS Administración de Sistemas Informáticos en Red  
 
-1. LEMP Stack
-   1.1 Instalación del servidor web Nginx
-   1.2 Instalación de php-fpm y php-mysql
-   1.3 Configuración de php-fpm
-   1.4 Configurar Nginx para usar php-fpm
-2. Referencias
+1. LEMP Stack 
+   1.1 Instalación del servidor web Nginx 
+   1.2 Instalación de php-fpm y php-mysql 
+   1.3 Configuración de php-fpm 
+   1.4 Configurar Nginx para usar php-fpm 
+2. Referencias 
 
 ## 1 LEMP Stack
 
