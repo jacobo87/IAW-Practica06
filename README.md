@@ -38,7 +38,7 @@ Es recomendable realizar un cambio en la directiva de configuración cgi.fix_pat
 sudo nano /etc/php/7.2/fpm/php.ini
 ```
 
-> NOTA: En el momento de redactar esta guía la versión de PHP es la 7.2. Tenga en cuenta que esta versión puede cambiar en un futuro.
+> NOTA: En el momento de redactar esta guía la versión de PHP es la 7.4. Tenga en cuenta que esta versión puede cambiar en un futuro.
 
 Buscamos la directiva de configuración cgi.fix_pathinfo que por defecto aparece comentada con un punto y coma y con un valor igual a 1.
 
@@ -55,7 +55,7 @@ cgi.fix_pathinfo=0
 Una vez modificado el archivo de configuración y guardados los cambios reiniciamos el servicio php7.2-fpm.
 
 ```bash
-sudo systemctl restart php7.2-fpm
+sudo systemctl restart php7.4-fpm
 ```
 
 ### Configurar Nginx para usar php-fpm
