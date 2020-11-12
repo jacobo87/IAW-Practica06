@@ -37,11 +37,28 @@ git clone https://github.com/josejuansanchez/iaw-practica-lamp
 mv /var/www/html/iaw-practica-lamp/src/*  /var/www/html/
 
 # Configuramos el archivo php de la aplicacion
-sed -i "s/localhost/$IPPRIVADA/" /var/www/html/config.php
+# sed -i "s/localhost/$IPPRIVADA/" /var/www/html/config.php
 
 # Eliminamos el archivo Index.html de nginx
 rm -rf /var/www/html/index.html
 rm -rf /var/www/html/iaw-practica-lamp/
+
+# Instalamos unzip
+apt install unzip -y
+# Instalación de Phpmyadmin
+cd /home/ubuntu
+rm -rf phpMyAdmin-5.0.4-all-lenguages.zip
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-lenguages.zip
+# Descomprimimos 
+nzip phpMyAdmin-5.0.4-all-lenguages.zip
+# Borramos el archivo .zip
+rm -rf phpMyAdmin-5.0.4-all-lenguages.zip
+# Movemos la carpeta al directorio
+mv phpMyAdmin-5.0.4-all-lenguages /var/www/html/phpmyadmin
+# Configuaramos el archivo config.sample.inc.php
+cd /var/www/html/phpmyadmin
+mv config.sample.inc.php config.inc.php
+sed -i "s/localhost/$IPPRIVADA/" /var/www/html/config.inc.php
 
 # Cambiamos permisos 
 chown www-data:www-data * -R
