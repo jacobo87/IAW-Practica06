@@ -17,8 +17,8 @@ En esta práctica vamos a instalar la pila LEMP que es una variación de la pila
 Nginx está considerado como un servidor web ligero de alto rendimiento que además suele ser utilizado como proxy inverso y balanceador de carga.
 ### Instalación del servidor web Nginx
 
-sudo apt-get update
-sudo apt-get install nginx
+``sudo apt-get update``
+``sudo apt-get install nginx``
 
 ### Instalación de php-fpm y php-mysql
 
@@ -26,7 +26,7 @@ El paquete php-fpm (PHP FastCGI Process Manager) es una implementación alternat
 
 El paquete php-mysql permite a PHP interaccionar con el sistema gestor de bases de datos MySQL.
 
-sudo apt-get install php-fpm php-mysql
+``sudo apt-get install php-fpm php-mysql``
 
 ### Configuración de php-fpm
 
