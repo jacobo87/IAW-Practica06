@@ -35,7 +35,7 @@ El paquete php-mysql permite a PHP interaccionar con el sistema gestor de bases 
 Es recomendable realizar un cambio en la directiva de configuración cgi.fix_pathinfo por cuestiones de seguridad. Editamos el siguiente archivo de configuración:
 
 ```bash
-sudo nano /etc/php/7.2/fpm/php.ini
+sudo nano /etc/php/7.4/fpm/php.ini
 ```
 
 > NOTA: En el momento de redactar esta guía la versión de PHP es la 7.4. Tenga en cuenta que esta versión puede cambiar en un futuro.
@@ -95,7 +95,7 @@ server {
 
         location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
-                # With php7.2-fpm:
+                # With php7.4-fpm:
                 fastcgi_pass unix:/run/php/php7.2-fpm.sock;
         }
 
