@@ -52,7 +52,7 @@ Eliminamos el punto y coma y la configuramos con un valor igual a 0.
 cgi.fix_pathinfo=0
 ```
 
-Una vez modificado el archivo de configuración y guardados los cambios reiniciamos el servicio php7.2-fpm.
+Una vez modificado el archivo de configuración y guardados los cambios reiniciamos el servicio php7.4-fpm.
 
 ```bash
 sudo systemctl restart php7.4-fpm
