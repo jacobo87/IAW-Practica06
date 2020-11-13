@@ -70,7 +70,7 @@ sudo nano /etc/nginx/sites-available/default
 Realizamos los siguientes cambios:
 
 - En la sección ```index``` añadimos el valor ``index.php`` en primer lugar para darle prioridad respecto a los archivos ``index.html``.
-- Añadimos el bloque ``location ~ \.php$`` indicando dónde se encuentra el archivo de configuración ``fastcgi-php.conf`` y el archivo ``php7.2-fpm.sock``.
+- Añadimos el bloque ``location ~ \.php$`` indicando dónde se encuentra el archivo de configuración ``fastcgi-php.conf`` y el archivo ``php7.4-fpm.sock``.
 
 Opcionalmente podemos añadir el bloque ``location ~ /\.ht`` para no permitir que un usuario pueda descargar los archivos ``.htaccess``. Estos archivos no son procesados por Nginx, son específicos de Apache.
 
@@ -96,7 +96,7 @@ server {
         location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
                 # With php7.4-fpm:
-                fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+                fastcgi_pass unix:/run/php/php7.4-fpm.sock;
         }
 
         # deny access to .htaccess files, if Apache's document root
