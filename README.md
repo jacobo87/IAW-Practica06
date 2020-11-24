@@ -38,7 +38,7 @@ Es recomendable realizar un cambio en la directiva de configuración cgi.fix_pat
 sudo nano /etc/php/7.4/fpm/php.ini
 ```
 
-> NOTA: En el momento de redactar esta guía la versión de PHP es la 7.4. Tenga en cuenta que esta versión puede cambiar en un futuro.
+> :warning: NOTA: En el momento de redactar esta guía la versión de PHP es la 7.4. Tenga en cuenta que esta versión puede cambiar en un futuro.
 
 Buscamos la directiva de configuración cgi.fix_pathinfo que por defecto aparece comentada con un punto y coma y con un valor igual a 1.
 
